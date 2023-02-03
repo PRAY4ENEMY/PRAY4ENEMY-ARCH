@@ -2,10 +2,7 @@
 
 rice(){
 
-pacman -Syyu neovim vim i3 picom kitty i3blocks neofetch xwallpapers
-
-git clone https://github.com/PRAY4ENEMY/wallpapers.git 
-cp $PWD/wallpapers/ ~/.config
+pacman -Syyu neovim vim i3 picom kitty i3blocks neofetch xwallpapers dmenu
 
 ## apps 
 
