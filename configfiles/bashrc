@@ -1,0 +1,17 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias vim='nvim'
+alias quitter='sudo shutdown now'
+alias f='firefox'
+alias ls='ls --color=auto'
+alias c='khal calendar'
+alias cleandir='cleandir 2> /dev/null'
+PS1='\[\033[36m\][\h \W]\$ \[\033[00m\]'
+
+neofetch
+

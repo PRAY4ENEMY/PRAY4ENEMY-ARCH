@@ -1,0 +1,50 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=20
+
+[greetings]
+color=#2fdce9
+full_text=Welcome, THRASH-LIBRE
+
+[battery]
+command=echo "BAT - $(cat /sys/class/power_supply/BAT0/capacity)%"
+interval=1
+color=#2fdce9
+
+[Volume]
+command=echo "VOL - $(pamixer --get-volume)"
+interval=1
+color=#2fdce9
+
+[Disk-Used]
+command=echo "M.2 -$(df --output=pcent -H /dev/nvme0n1p4 | grep [1-99] | sed 's/^.//')"
+interval=1
+color=#2fdce9
+
+[Music]
+full_text=MUSIC
+command=muse
+color=#7289da
+
+[ApplicationMenu]
+full_text=APPS
+command=apps
+color=#7289da
+
+[time]
+command=date '+%Y-%m-%d'
+color=#2fdce9
+interval=60
+
+[time]
+command=date '+%H:%M '
+color=#2fdce9
+interval=60

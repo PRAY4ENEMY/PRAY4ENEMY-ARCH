@@ -1,0 +1,17 @@
+#!/bin/sh 
+
+eval $(awk '{print "var"NR"="$1}' ~/.config/appsconfig)
+
+choices=$(cat ~/.config/appsconfig)
+chosen=$(echo -e "$choices" | dmenu -i -p "Application Menu")
+
+case "$chosen" in 
+	$var1) setsid -f $var1;;
+	$var2) setsid -f $var2;;
+	$var3) setsid -f $var3;;
+	$var4) setsid -f $var4;;
+	$var5) setsid -f $var5;;
+	$var6) setsid -f $var6;;
+	$var7) setsid -f $var7;;
+	$var8) setsid -f $var8;;
+esac
