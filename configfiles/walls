@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#selects a random image from /.config/wallpapers and set it as wallpaper upon xorg start. 
+
+DIRPATH=~/.config/wallpapers/
+PIC=$(ls $DIRPATH | shuf -n 1)
+
+xwallpaper --output eDP-1 --center $DIRPATH/$PIC --output HDMI-1-0 --center $DIRPATH/$PIC
