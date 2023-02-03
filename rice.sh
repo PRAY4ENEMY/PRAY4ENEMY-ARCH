@@ -30,6 +30,7 @@ cp configfiles/dual /usr/local/bin && echo "duals monitor added"
 cp configfiles/mirror /usr/local/bin && echo "mirror monitor added"
 cp configfiles/apps /usr/local/bin && echo "apps added"
 cp configfiles/muse /usr/local/bin && echo "muse added"
+cp configfiles/walls /usr/local/bin && echo "walls added"
 
 sleep 2
 
