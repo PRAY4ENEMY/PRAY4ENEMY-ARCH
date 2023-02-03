@@ -10,26 +10,26 @@ mv -r wallpapers ~/.config/
 
 sleep 2 
 
-cat /configfiles/picomconf > /etc/xdg/picom.conf && echo "picom config added"
-cat /configfiles/i3conf > /etc/i3/config && echo "i3 config added added"
-cat /configfiles/i3bconf > /etc/i3blocks.conf && echo "i3 blocks config added"
+cat configfiles/picomconf > /etc/xdg/picom.conf && echo "picom config added"
+cat configfiles/i3conf > /etc/i3/config && echo "i3 config added added"
+cat configfiles/i3bconf > /etc/i3blocks.conf && echo "i3 blocks config added"
 
 ## utiles 
 
 
 sleep 2 
 
-cat /configfiles/bashrc > ~/.bashrc  && echo "bashrc added"
-cat /configfiles/xinitrc > ~/.xinitrc && echo "xinitrc added"
+cat configfiles/bashrc > ~/.bashrc  && echo "bashrc added"
+cat configfiles/xinitrc > ~/.xinitrc && echo "xinitrc added"
 
 ## custom scripts
 
 sleep 2 
 
-cp /configfiles/dual /usr/local/bin && echo "duals monitor added"
-cp /configfiles/mirror /usr/local/bin && echo "mirror monitor added"
-cp /configfiles/apps /usr/local/bin && echo "apps added"
-cp /configfiles/muse /usr/local/bin && echo "muse added"
+cp configfiles/dual /usr/local/bin && echo "duals monitor added"
+cp configfiles/mirror /usr/local/bin && echo "mirror monitor added"
+cp configfiles/apps /usr/local/bin && echo "apps added"
+cp configfiles/muse /usr/local/bin && echo "muse added"
 
 sleep 2
 
