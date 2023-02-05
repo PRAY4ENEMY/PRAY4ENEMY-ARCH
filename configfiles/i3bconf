@@ -10,9 +10,12 @@
 separator=true
 separator_block_width=20
 
+
+whoami | = name
+
 [greetings]
 color=#2fdce9
-full_text=Welcome, THRASH-LIBRE
+full_text=Welcome, $name
 
 [battery]
 command=echo "BAT - $(cat /sys/class/power_supply/BAT0/capacity)%"
